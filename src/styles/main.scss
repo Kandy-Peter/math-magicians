@@ -25,23 +25,6 @@
       font-size: 30px;
     }
 
-    .clm-2 {
-      width: 25%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-
-      button {
-        background-color: #f5913e;
-
-        &:hover {
-          background-color: #ffdbbe;
-          color: #fd7200;
-          transition: 0.5s all;
-        }
-      }
-    }
-
     .clm-1 {
       width: 75%;
       display: flex;
@@ -56,7 +39,24 @@
 
         &:active {
           background-color: #4d4d4d;
-          color: #ffffff;
+          color: #fff;
+          transition: 0.5s all;
+        }
+      }
+    }
+
+    .clm-2 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      button {
+        background-color: #f5913e;
+
+        &:hover {
+          background-color: #ffdbbe;
+          color: #fd7200;
           transition: 0.5s all;
         }
       }
