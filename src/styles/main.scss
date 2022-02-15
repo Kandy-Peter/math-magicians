@@ -23,6 +23,12 @@
       height: 100px;
       border: 2px solid rgb(248, 248, 248);
       font-size: 30px;
+
+      &:active {
+        background-color: #4d4d4d;
+        color: #fff;
+        transition: 0.5s all;
+      }
     }
 
     .clm-2 {
