@@ -1,0 +1,53 @@
+.container-fluid {
+  width: 600px;
+  height: 600px;
+  margin: 4.5rem auto;
+  border-top: 3px solid #fff;
+
+  .result {
+    width: 100%;
+    height: 100px;
+    background-color: #858694;
+    padding-top: 1rem;
+    padding-right: 10px;
+    font-size: 30px;
+    color: #fff;
+    text-align: end;
+  }
+
+  .btnContainer {
+    display: flex;
+
+    button {
+      width: 100%;
+      height: 100px;
+      border: 2px solid rgb(248, 248, 248);
+      font-size: 30px;
+    }
+
+    .clm-2 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      button {
+        background-color: #f5913e;
+      }
+    }
+
+    .clm-1 {
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+
+      button {
+        width: 149px;
+
+        &:nth-child(13) {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
