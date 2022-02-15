@@ -5,7 +5,7 @@ The math magician web app is a simple calculator for solving minor math problems
 
 ## Screenshoot
 
-![Screeshot](./src/images/Screenshot.png)
+![Screeshot](./src/Screenshot.png)
 
 ## see the project
    here is the:  [live_Demo]()
@@ -19,14 +19,12 @@ The math magician web app is a simple calculator for solving minor math problems
 
 clone repo: `git clone https://github.com/Kandy-Peter/math-magicians.git`
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
-run `npx create-react-app app_name` for a new repo.
-or `npx create-react-app .` for an existing repo.
-
-### `npm start`
-
-Runs the app in the development mode.\
+run `npm install` to install dependecies
+### Run to the browser
+ `npm start`
+the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -38,6 +36,20 @@ The page will reload when you make changes.\
 - GitHub: [Kandi-Peter](https://github.com/Kandy-Peter).
 - LinkedIn: [Kandi-Kamuntu](https://www.linkedin.com/in/kandi-peter-a49590212/).
 - twitter: [Kandi_Peter](https://twitter.com/peter_kandy).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
 
 
 
