@@ -33,6 +33,12 @@
 
       button {
         background-color: #f5913e;
+
+        &:hover {
+          background-color: #ffdbbe;
+          color: #fd7200;
+          transition: 0.5s all;
+        }
       }
     }
 
@@ -46,6 +52,12 @@
 
         &:nth-child(13) {
           flex: 1;
+        }
+
+        &:active {
+          background-color: #4d4d4d;
+          color: #ffffff;
+          transition: 0.5s all;
         }
       }
     }
