@@ -25,19 +25,6 @@
       font-size: 30px;
     }
 
-    .clm-1 {
-      width: 75%;
-      display: flex;
-      flex-wrap: wrap;
-
-      button {
-        width: 149px;
-        &:nth-child(13) {
-          flex: 1;
-        }
-      }
-    }
-
     .clm-2 {
       width: 25%;
       height: 100%;
@@ -45,7 +32,21 @@
       flex-direction: column;
 
       button {
-        background-color: #F5913E;
+        background-color: #f5913e;
+      }
+    }
+
+    .clm-1 {
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+
+      button {
+        width: 149px;
+
+        &:nth-child(13) {
+          flex: 1;
+        }
       }
     }
   }
