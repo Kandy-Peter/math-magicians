@@ -23,6 +23,23 @@
       height: 100px;
       border: 2px solid rgb(248, 248, 248);
       font-size: 30px;
+
+      &:active {
+        background-color: #4d4d4d;
+        color: #fff;
+        transition: 0.5s all;
+      }
+    }
+
+    .clm-2 {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+
+      button {
+        background-color: #f5913e;
+      }
     }
 
     .clm-1 {
@@ -35,29 +52,6 @@
 
         &:nth-child(13) {
           flex: 1;
-        }
-
-        &:active {
-          background-color: #4d4d4d;
-          color: #fff;
-          transition: 0.5s all;
-        }
-      }
-    }
-
-    .clm-2 {
-      width: 25%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-
-      button {
-        background-color: #f5913e;
-
-        &:hover {
-          background-color: #ffdbbe;
-          color: #fd7200;
-          transition: 0.5s all;
         }
       }
     }
