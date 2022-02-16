@@ -1,53 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-export default class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      numbers: ['AC', '+/-', '%', '7', '8', '9', '4', '5', '6', '1', '2', '3', '0', '.'],
-      operators: ['÷', 'x', '-', '+', '='],
-      total: '0',
-      next: null,
-      operation: null,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: '0',
+    next: null,
+    operation: null,
+  });
 
-  handleClick = (e) => {
-    const { next, total, operation } = calculate(this.state, e.target.name);
-    this.checkState(next, total, operation);
+  const checkState = (next, total, operation) => {
+    if (next === null && total === null) {
+      setState({ next, total: '0', operation });
+    } else {
+      setState({ next, total, operation });
+    }
   };
 
-  checkState(next, total, operation) {
-    if (next === null && total === null) {
-      this.setState({ next, total: '0', operation });
-    } else {
-      this.setState({ next, total, operation });
-    }
-  }
+  const handleClick = (e) => {
+    const { next, total, operation } = calculate(state, e.target.name);
+    checkState(next, total, operation);
+  };
 
-  render() {
-    const {
-      numbers, operators, total, next,
-    } = this.state;
-    const newLocal = (
-      <div className="result">
-        {(next ? (<h1>{next}</h1>) : (<h1>{total}</h1>))}
-      </div>
-    );
-    return (
-      <div className="container-fluid">
-        {newLocal}
-        <div className="btnContainer">
-          <div className="clm-1">
-            {numbers.map((btn) => (<button onClick={this.handleClick} type="button" name={btn} key={btn}>{btn}</button>))}
-          </div>
-          <div className="clm-2">
-            {operators.map((btn2) => (<button onClick={this.handleClick} type="button" key={btn2} name={btn2}>{btn2}</button>))}
-          </div>
+  const { total, next } = state;
+  const newLocal = (
+    <div className="result">
+      {(next ? (<h1>{next}</h1>) : (<h1>{total}</h1>))}
+    </div>
+  );
+  const numbers = ['AC', '+/-', '%', '7', '8', '9', '4', '5', '6', '1', '2', '3', '0', '.'];
+  const operators = ['÷', 'x', '-', '+', '='];
+  return (
+    <div className="container-fluid">
+      {newLocal}
+      <div className="btnContainer">
+        <div className="clm-1">
+          {numbers.map((btn) => (<button onClick={handleClick} type="button" name={btn} key={btn}>{btn}</button>))}
+        </div>
+        <div className="clm-2">
+          {operators.map((btn2) => (<button onClick={handleClick} type="button" key={btn2} name={btn2}>{btn2}</button>))}
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+export default Calculator;
