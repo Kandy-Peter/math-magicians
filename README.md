@@ -3,6 +3,9 @@
 Frist Microverse projects to get start with React.
 The math magician web app is a simple calculator for solving minor math problems.
 
+## Screenshot
+![screencapture-localhost-3000-Calculation-2022-02-22-15_09_43](https://user-images.githubusercontent.com/80612925/155142171-3c15c47d-cef1-4d9c-8618-04fd8203af44.png)
+
 ## see the project
    here is the:  [live_Demo]()
 
